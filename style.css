@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+     background: black;
+    color: #e6bd52;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+}
+
+.navbar .nav-link {
+    color: #e6bd52; /* Cor padrão dourada */
+  }
+  
+  .navbar .nav-link:hover {
+    color: #91843c; /* Cor ao passar o mouse */
+  }
+
+  .navbar .nav-link:focus {
+    color: gold; /* Garante que a cor dourada seja mantida ao focar no link */
+  }
+
