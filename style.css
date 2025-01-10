@@ -31,8 +31,7 @@
 .navbar .nav-link {
     color: #d0a933;
     font-weight: bold;
-    
-    
+     
 }
 
  .navbar .nav-link:hover {
@@ -57,7 +56,6 @@
 
  .inicio{
     display: flex;
-    flex-wrap: wrap-reverse;
     background-color: #2e2b2b;
     align-items: center;
     justify-content: center;
@@ -158,6 +156,7 @@
       width: 100%;
       font-size: 1.4rem;
       margin-left: 4rem;
+      margin-top:0.8rem ;
         
    
     }
