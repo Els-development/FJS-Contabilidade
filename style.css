@@ -1,5 +1,7 @@
 *{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     width: 100%;
     height: 100%;
     font-family: "Alice", serif;
@@ -12,6 +14,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    justify-content: center;
     padding: 2px;
     border-bottom: 5px solid #d0a933;
     height: 30%;
@@ -43,30 +46,32 @@
 
   .inicio{
     display: flex;
+    flex-wrap: wrap-reverse;
     background-color: #2e2b2b;
     align-items: center;
+    justify-content: center;
     font-weight: 600;
-    padding: 60px;
+    padding: 4rem;
     text-align: center;
-    height: 40rem;
+    height: auto;
   }
 
   .inicio-text{
-    font-size: 3rem;
-    width: 800px;
+    font-size: 3vw;
+    width: 40vw;
     margin-right: 60px;
-    
-    
+    margin-top: 60px;
+ 
   }
 
-  .btn-faleconosco{
-    font-size: 1.7rem;
-    width: 300px;
+ .btn-faleconosco{
+    font-size: 1.5vw;
+    width: 50%;
     height: 80px;
     background: none;
     border-color: #d0a933;
     border-radius: 5px;
-    margin: 100px 200px;
+    margin: 8rem 4rem;
     
   }
   .btn-faleconosco:hover{
@@ -75,9 +80,9 @@
   }
 
   .inicio img{
-    width: 50rem;
-    height: 30rem;
+    max-width: 100%;
+    width: 50%;
+    height: auto;
     border-radius: 10px;
     box-shadow: 2px 5px 12px #d0a933;
-    margin: 20px;
-  }
+   }
