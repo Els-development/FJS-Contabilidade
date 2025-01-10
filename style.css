@@ -1,20 +1,32 @@
 *{
     margin: 0;
     padding: 0;
-     background: black;
-    color: #e6bd52;
+    font-family: "Alice", serif;
+    color: #d0a933;
+    
+    
 }
 
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    
+    padding: 2px;
+    border-bottom: 5px solid #d0a933;
+   
 }
-
+.navbar-brand img{
+  width: 20rem;
+}
 .navbar .nav-link {
-    color: #e6bd52; /* Cor padrão dourada */
+   
+    color: #d0a933;
+    font-weight: bold;
+    
+  }
+  .collapse{
+    margin-bottom: 10rem;
+    padding-left: 50rem;
   }
   
   .navbar .nav-link:hover {
@@ -25,3 +37,40 @@
     color: gold; /* Garante que a cor dourada seja mantida ao focar no link */
   }
 
+
+  .inicio{
+    display: flex;
+    background-color: #2e2b2b;
+    align-items: center;
+    font-weight: 600;
+    padding: 60px;
+    
+  }
+
+  .inicio-text{
+    font-size: 3rem;
+    width: 800px;
+    margin-right: 60px;
+  }
+
+  .btn-faleconosco{
+    font-size: 1.7rem;
+    width: 300px;
+    height: 80px;
+    background: none;
+    border-color: #d0a933;
+    border-radius: 5px;
+    margin: 100px 200px;
+    
+  }
+  .btn-faleconosco:hover{
+   background-color: #504b4b;
+    
+  }
+
+  .inicio img{
+    width: 50rem;
+    border-radius: 10px;
+    box-shadow: 2px 5px 12px #d0a933;
+    margin: 20px;
+  }
