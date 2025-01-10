@@ -17,7 +17,7 @@
     justify-content: center;
     padding: 2px;
     border-bottom: 5px solid #d0a933;
-    height: 30%;
+    height: 40%;
    
 }
 .navbar-brand img{
@@ -46,7 +46,6 @@
 
   .inicio{
     display: flex;
-    flex-wrap: wrap-reverse;
     background-color: #2e2b2b;
     align-items: center;
     justify-content: center;
@@ -81,8 +80,29 @@
 
   .inicio img{
     max-width: 100%;
-    width: 50%;
+    width: 45vw;
     height: auto;
     border-radius: 10px;
     box-shadow: 2px 5px 12px #d0a933;
+    margin-bottom: 13rem;
    }
+
+   .sobre-mim{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    height: auto;
+    margin: 5rem 0 5rem;
+   }
+
+   .sobre-mim-text{
+     width: 30rem;
+     padding: 2rem;
+   }
+
+   .sobre-mim-h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
