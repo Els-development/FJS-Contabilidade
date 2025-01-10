@@ -96,10 +96,10 @@
 
    .sobre-mim{
     display: flex;
-    
     width: 100%;
     height: auto;
     margin: 5rem 0 5rem;
+    padding: 4rem;
    }
 
    .sobre-mim-text{
@@ -141,3 +141,59 @@
     margin-bottom: 13rem;
    }
 
+   @media(max-width:800px) {
+
+    .inicio{
+      display: flex;
+      flex-wrap: wrap-reverse;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0.5rem;
+
+    }
+
+    .inicio-text{
+      width: 100%;
+      font-size: 1.4rem;
+      margin-left: 4rem;
+        
+   
+    }
+
+    .btn-faleconosco{
+      font-size: 1.2rem;
+      width: 150px;
+      height: 100px;
+      margin: 4rem 2rem;
+      
+      
+    }
+
+    .inicio img{
+      width: 500px;
+      height: 200px;
+      margin-bottom: 0.7rem;
+
+     }
+
+     .sobre-mim{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: auto;
+      margin: 5rem 0 5rem;
+      padding: 0.1rem;
+     }
+
+     .img-sobre-mim{
+      width: 300px;
+      height: 200px;
+      margin-bottom: 0.7rem;
+      margin-left: 4rem;
+      
+     }
+
+
+    
+   }
