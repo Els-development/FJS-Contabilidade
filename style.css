@@ -89,7 +89,7 @@
 
    .sobre-mim{
     display: flex;
-    flex-direction:column;
+    
     width: 100%;
     height: auto;
     margin: 5rem 0 5rem;
@@ -98,11 +98,39 @@
    .sobre-mim-text{
      width: 30rem;
      padding: 2rem;
+     font-size: 1.2rem;
+   }
+
+   .sobre-mim-h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
    }
 
    .sobre-mim-h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    color: #2e2b2b;
+   }
+
+   .sobre-mim-span, strong{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #2e2b2b;
+    padding-top: 1rem;
+   }
+
+   .img-sobre-mim{
+    max-width: 100%;
+    width: 45vw;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 5px 12px #d0a933;
+    margin-bottom: 13rem;
    }
 
