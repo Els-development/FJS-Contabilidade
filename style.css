@@ -1,9 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     width: 100%;
-    height: 100%;
+    box-sizing: border-box;
     font-family: "Alice", serif;
     color: #d0a933;
     
@@ -20,22 +19,22 @@
     height: 40%;
    
 }
+
 .navbar-brand img{
   width: 20rem;
   height: 18rem;
 }
+.navbar-toggler{
+ width: 80px;
+}
+
 .navbar .nav-link {
-   
     color: #d0a933;
     font-weight: bold;
     
-  }
-  .collapse{
-    margin-top: 2rem;
-    
-  }
-  
-  .navbar .nav-link:hover {
+}
+
+ .navbar .nav-link:hover {
     color: #91843c; /* Cor ao passar o mouse */
   }
 
@@ -43,48 +42,56 @@
     color: gold; /* Garante que a cor dourada seja mantida ao focar no link */
   }
 
+  .navbar-toggler {
+    border: 2px solid #d0a933!important; /* Borda dourada */
+    border-radius: 5px; /* Ajusta o arredondamento da borda */
+  }
+  
+ /* Evita que a borda ou fundo fique preto quando focado ou ativo */
+.navbar-toggler:focus, .navbar-toggler:active {
+  outline: none !important; /* Remove o contorno padrão */
+  background-color: transparent !important; /* Evita fundo preto */
+  box-shadow: none !important; /* Remove qualquer sombra padrão */
+}
 
-  .inicio{
+ .inicio{
     display: flex;
+    flex-wrap: wrap-reverse;
     background-color: #2e2b2b;
     align-items: center;
     justify-content: center;
-    font-weight: 600;
     padding: 4rem;
     text-align: center;
-    height: auto;
+    
   }
 
   .inicio-text{
-    font-size: 3vw;
-    width: 40vw;
-    margin-right: 60px;
-    margin-top: 60px;
- 
+    font-size: 4.5vh;
+    width: 45vw;
+    padding-right: 2rem; 
   }
 
  .btn-faleconosco{
-    font-size: 1.5vw;
-    width: 50%;
+    font-size: 3vh;
+    width: 20vw;
     height: 80px;
     background: none;
     border-color: #d0a933;
     border-radius: 5px;
-    margin: 8rem 4rem;
+    margin:5rem;
     
   }
   .btn-faleconosco:hover{
    background-color: #504b4b;
-    
   }
 
   .inicio img{
-    max-width: 100%;
+    max-width: min-content;
     width: 45vw;
     height: auto;
     border-radius: 10px;
     box-shadow: 2px 5px 12px #d0a933;
-    margin-bottom: 13rem;
+    margin-bottom: 3rem;
    }
 
    .sobre-mim{
