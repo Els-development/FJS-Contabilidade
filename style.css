@@ -27,7 +27,7 @@
 }
 
 .navbar-toggler{
- width: 80px;
+ width: 60px;
 }
 
 .navbar .nav-link {
@@ -58,18 +58,37 @@
 
  .inicio{
     display: flex;
-    background-color: #2e2b2b;
     align-items: center;
     justify-content: center;
     padding: 4rem;
+    height: 80vh;
     text-align: center;
+    background-image: url("./inicio-site.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+    
     
   }
-
+  
+  .inicio::after{
+    content: '';
+    background-color: #2e2b2b;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .8;
+    z-index: -1;
+  }
   .inicio-text{
     font-size: 4.5vh;
     width: 45vw;
     padding-right: 2rem; 
+    
   }
 
  .btn-faleconosco{
