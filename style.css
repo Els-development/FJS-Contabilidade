@@ -17,6 +17,7 @@
     padding: 2px;
     border-bottom: 5px solid #d0a933;
     height: 40%;
+    text-transform: capitalize;
    
 }
 
