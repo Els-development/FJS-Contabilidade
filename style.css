@@ -63,7 +63,7 @@
     padding: 4rem;
     height: 80vh;
     text-align: center;
-    background-image: url("./inicio-site.jpeg");
+    background-image: url("./img/inicio-site.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -161,6 +161,52 @@
     margin-bottom: 13rem;
    }
 
+   .nossos-servicos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 5rem 0 5rem;
+    padding: 4rem;
+    background-color: #2e2b2b;
+   }
+
+   .nossos-servicos-h1{
+    text-align: center;
+    margin-bottom: 3rem;
+   }
+   .cards-nossos-servicos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:2rem;
+    align-items: center;
+    justify-items: center;
+        
+   }
+   .cards{
+    background-color: #d0a9330f;
+    border-right: 2px solid #d0a933;
+    border-radius: 1rem;
+    width: 15rem;
+    height: 11rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+   }
+   .card-p{
+    text-align: center;
+   }
+   
+   .empresarial-img{
+    width: 4rem;
+    align-items: center;
+    margin-bottom: 1rem;
+   }
+
    @media(max-width:800px) {
 
     .inicio{
@@ -213,6 +259,12 @@
       margin-bottom: 0.7rem;
       margin-left: 4rem;
       
+     }
+
+     .cards-nossos-servicos{
+      display: flex;
+      flex-wrap: wrap;
+
      }
 
 
