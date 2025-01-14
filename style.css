@@ -118,14 +118,15 @@
     border-radius: 10px;
     box-shadow: 2px 5px 12px #d0a933;
     margin-bottom: 3rem;
+    
    }
 
    .sobre-mim{
     display: flex;
     width: 100%;
     height: auto;
-    margin: 5rem 0 5rem;
-    padding: 4rem;
+    justify-content: center;
+    align-items: center;
    }
 
    .sobre-mim-text{
@@ -160,11 +161,9 @@
 
    .img-sobre-mim{
     max-width: 100%;
-    width: 45vw;
+    width: 40vw;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 2px 5px 12px #d0a933;
-    margin-bottom: 13rem;
+    
    }
 
    .nossos-servicos{
@@ -192,9 +191,8 @@
         
    }
    .cards{
-    background-color: #d0a9330f;
-    border-right: 2px solid #d0a933;
-    border-radius: 1rem;
+    
+    border-bottom: 2px solid #d0a933;
     width: 15rem;
     height: 11rem;
     display: flex;
