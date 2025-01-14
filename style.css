@@ -179,7 +179,7 @@
    .nossos-servicos-h1,.nossos-clientes-h1{
     text-align: center;
     margin-bottom: 3rem;
-    margin-top: 2rem;
+    padding-top: 2rem;
    }
    .cards-nossos-servicos{
     display: grid;
@@ -210,24 +210,28 @@
     margin-bottom: 1rem;
    }
 
-
+.nossos-clientes{
+  height: 40rem;
+  
+}
 
 .slider {
     background: white;
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-    height: 100px;
+    height: 20rem;
     margin: auto;
     overflow: hidden;
     position: relative;
-    width: 960px;
+    width: 60rem;
+    align-content: center;
 }
 
 .slider::before,
 .slider::after {
     content: "";
-    height: 100px;
+    height: 20rem;
     position: absolute;
-    width: 200px;
+    width: 12.5rem;
     z-index: 2;
     background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
 }
@@ -245,14 +249,16 @@
 
 .slide-track {
     display: flex;
-    width: calc(250px * 14); /* 14 slides */
+    width: calc(15.7rem * 14); /* 14 slides */
     animation: scroll var(--animation-speed) linear infinite;
    
 }
-
-.slide {
-    height: 100px;
-    width: 250px;
+.slide{
+  width: 15.7rem;
+}
+.slide img{
+  height: 15rem;
+  
 }
 
 /* Animação */
@@ -261,20 +267,20 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-250px * 7)); /* 7 slides */
+        transform: translateX(calc(-15.7rem * 7)); /* 7 slides */
     }
 }
 
 .contato{
   display: flex;
   background-color: #2e2b2b;
-  margin-top: 10rem;
-  padding: 2rem;
+  padding:10rem 2rem;
   gap: 2rem;
 }
 
 .endereco{
   padding-top: 3rem;
+  padding-left: 5rem;
   font-size: 1.5rem;
   width: 50%;
   border-right: 1px dashed #d0a933;
@@ -312,115 +318,109 @@
   box-shadow: 2px 10px 5px #1a1919;
 }
 
-footer{
-  display: block;
-   text-align: center;
- }
- .feito-por{
-  color: #2e2b2b;
+footer {
+  background: #2e2b2b;
+  
+}
+.col-md-3{
+  margin-bottom: 20px;
+}
+
+.copy {
+  
   font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #d0a933;
+ 
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0;
+  padding: 0;
   
- }
-
-#social-platforms {
-  position:relative;
-  top:100px;
-  top:25vh;
-  font-size:1rem;
-  text-align:center;
-  height:250px;
-  overflow:hidden;
-  
 }
 
-/*Pen code from this point on*/
-.btn {
-  clear:both;
-  white-space:nowrap;
-  font-size:.8em;
-  display:inline-block;
-  border-radius:5px;
-  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.35);
-  margin:2px;
-  -webkit-transition:all .5s;
-  -moz-transition:all .5s;
-  transition:all .5s;
-  overflow:hidden
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
 }
 
-.btn:hover {
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.45);
+/* footer social icons */
+
+.social-network a.icoInstagram:hover {
+  background-color: #d130c9;
 }
 
-.btn:focus {
-  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.4);
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
 }
 
-.btn > span,.btn-icon > i {
-  float:left;
-  padding:13px;
-  -webkit-transition:all .5s;
-  -moz-transition:all .5s;
-  transition:all .5s;
-  line-height:1em
+.social-network a.icoInstagram:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
 }
 
-.btn > span {
-  padding:14px 18px 16px;
-  white-space:nowrap;
-  color:#FFF;
-  background:#b8b8b8
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #44BCDD;
 }
 
-.btn:focus > span {
-  background:#9a9a9a
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
 }
 
-.btn-icon > i {
-  border-radius:5px 0 0 5px;
-  position:relative;
-  width:13px;
-  text-align:center;
-  font-size:1.25em;
-  color:#fff;
-  background:#212121
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
 }
 
-.btn-icon > i:after {
-  content:"";
-  border:8px solid;
-  border-color:transparent transparent transparent #222;
-  position:absolute;
-  top:13px;
-  right:-15px
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
-.btn-icon:hover > i,.btn-icon:focus > i {
-  color:#FFF
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
 }
 
-.btn-icon > span {
-  border-radius:0 5px 5px 0
+.social-network a {
+  background-color: #F9F9F9;
 }
-
-/*Instagram*/
-.btn-instagram:hover > i,.btn-instagram:focus > i {
-  color:#91843c
-}
-
-.btn-instagram > span {
-  background:#d0a933
-}
-
-/*LinkedIn*/
-.btn-linkedin:hover > i,.btn-linkedin:focus > i {
-  color:#91843c
-}
-
-.btn-linkedin > span {
-  background:#d0a933
-}
-
 
    @media(max-width:800px) {
 
@@ -481,6 +481,21 @@ footer{
       flex-wrap: wrap;
 
      }
+     .slider {
+      width: 40rem; /* Reduz a largura dos slides */
+     
+    }
+  
+     
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(-10rem * 7)); /* Ajusta o deslocamento */
+      }
+    }
+  
 
     
    }
