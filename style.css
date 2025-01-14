@@ -11,7 +11,6 @@
     font-family: "Alice", serif;
     color: #d0a933;
     
-    
 }
 
 .header{
@@ -173,7 +172,6 @@
     align-items: center;
     width: 100%;
     height: auto;
-    margin: 5rem 0 5rem;
     padding: 4rem;
     background-color: #2e2b2b;
    }
@@ -211,7 +209,15 @@
     margin-bottom: 1rem;
    }
 
-
+   footer{
+    
+    display: block;
+    width: 100%;
+    text-align: center;
+   }
+   footer p{
+    color: #2e2b2b;
+   }
 
 .slider {
     background: white;
@@ -371,7 +377,6 @@
       flex-wrap: wrap;
 
      }
-
 
     
    }
