@@ -217,13 +217,11 @@
 
 .slider {
     background: white;
-    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
     height: 20rem;
     margin: auto;
-    overflow: hidden;
-    position: relative;
     width: 60rem;
     align-content: center;
+    
 }
 
 .slider::before,
@@ -233,7 +231,7 @@
     position: absolute;
     width: 12.5rem;
     z-index: 2;
-    background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+    
 }
 
 .slider::after {
@@ -251,24 +249,18 @@
     display: flex;
     width: calc(15.7rem * 14); /* 14 slides */
     animation: scroll var(--animation-speed) linear infinite;
+    gap: 2rem;
    
 }
 .slide{
   width: 15.7rem;
+  
 }
 .slide img{
   height: 15rem;
+  border-radius: 2rem;
   
-}
-
-/* Animação */
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(calc(-15.7rem * 7)); /* 7 slides */
-    }
+  
 }
 
 .contato{
