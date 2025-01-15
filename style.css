@@ -224,31 +224,10 @@
     
 }
 
-.slider::before,
-.slider::after {
-    content: "";
-    height: 20rem;
-    position: absolute;
-    width: 12.5rem;
-    z-index: 2;
-    
-}
-
-.slider::after {
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
-}
-
-.slider::before {
-    left: 0;
-    top: 0;
-}
-
 .slide-track {
+
     display: flex;
-    width: calc(15.7rem * 14); /* 14 slides */
-    animation: scroll var(--animation-speed) linear infinite;
+    flex-wrap: wrap;
     gap: 2rem;
    
 }
@@ -259,8 +238,7 @@
 .slide img{
   height: 15rem;
   border-radius: 2rem;
-  
-  
+  border: 0.5px solid gray;
 }
 
 .contato{
