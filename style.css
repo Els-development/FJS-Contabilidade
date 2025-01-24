@@ -11,6 +11,11 @@
     font-family: "Alice", serif;
     color: #d0a933;
     
+    
+    
+}
+body{
+  background-color: #000000;
 }
 
 .header{
@@ -22,17 +27,19 @@
     border-bottom: 5px solid #d0a933;
     height: 40%;
     text-transform: capitalize;
+    background-color: #000000;
    
 }
 
 .navbar-brand img{
-  width: 20rem;
-  height: 18rem;
-  margin-bottom: -3rem;
+  width: 16rem;
+  height: 13rem;
+  
 }
 
 .navbar-toggler{
  width: 60px;
+ 
 }
 
 .navbar .nav-link {
@@ -126,27 +133,25 @@
     height: auto;
     justify-content: center;
     align-items: center;
+    background-color: #000000;
+    border-top: 5px solid #d0a933;
+    
    }
 
    .sobre-mim-text{
      width: 30rem;
      padding: 2rem;
      font-size: 1.2rem;
+     
    }
 
    .sobre-mim-h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    
    }
 
-   .sobre-mim-h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #2e2b2b;
-   }
 
    .sobre-mim-span, strong{
     display: flex;
@@ -154,13 +159,13 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #2e2b2b;
+    color: #F9F9F9;
     padding-top: 1rem;
    }
 
    .img-sobre-mim{
     max-width: 100%;
-    width: 40vw;
+    width: 30vw;
     height: auto;
     
    }
@@ -211,24 +216,21 @@
    }
 
 .nossos-clientes{
-  height: 40rem;
-  
-}
-
-.slider {
-    background: white;
-    height: 20rem;
-    margin: auto;
-    width: 60rem;
-    align-content: center;
-    
+  width: 100%;
+  height: auto;
+  background-color: #000000;
+ 
 }
 
 .slide-track {
-
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 3rem;
+  gap: 2rem;
    
 }
 .slide{
@@ -434,26 +436,53 @@ ul.social-network li {
       flex-wrap: wrap;
       width: 100%;
       height: auto;
-      margin: 5rem 0 5rem;
-      padding: 0.1rem;
+      padding: 1rem;
      }
 
      .img-sobre-mim{
       width: 300px;
       height: 200px;
-      margin-bottom: 0.7rem;
-      margin-left: 4rem;
       
+     }
+     .nossos-clientes{
+      width: 100%;
      }
 
      .cards-nossos-servicos{
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
 
      }
-     .slider {
-      width: 40rem; /* Reduz a largura dos slides */
+  
+    .slide-track{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .contato{
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 0;
      
+    }
+
+    .endereco{
+     display: flex;
+     text-align: center;
+     flex-wrap: wrap;
+     width: 100%;
+     border-bottom: 1px dashed #d0a933;
+     border-right: none;
+     padding: 1rem;
+     
+    }
+
+    .maps-google{
+      width: 20rem;
+      
     }
   
      
